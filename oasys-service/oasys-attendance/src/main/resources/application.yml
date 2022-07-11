@@ -1,0 +1,17 @@
+server:
+  port: 8430
+spring:
+  application:
+    name: attendance-service
+  datasource:
+    url: jdbc:mysql://119.45.229.83/oasys?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: wy102102
+  jackson:
+    default-property-inclusion: non_null
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 119.45.229.83:8848
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
